@@ -30,6 +30,6 @@
 
 зручний приклад перевірки роботи скрипта:
 
-./process_tax.sh test1.csv > test1_result.csv
+./tax_converter.sh test1.csv > test1_result.csv
 diff -y <(awk -F, '{print $1,$6}' test1.csv) <(awk -F, '{print $1,$6}' test1_result.csv)
 
